@@ -2,12 +2,16 @@
 #define WORLD_H
 
 #include "context.h"
+#include "object_2d.h"
 
 /* represents the state of the game world */
 typedef struct world_t {
 
-    /* position of the player in world coordinates */
-    int x, y;
+    /* object to represent the paddle */
+    object_2d_t paddle;
+
+    /* object to represent the ball */
+    object_2d_t ball;
 
 } world_t;
 

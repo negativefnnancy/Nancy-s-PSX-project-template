@@ -1,5 +1,7 @@
 # Nancy's PSX project template (Nugget + Psy-Q on \*nix)
 
+___Big WIP!!! the state of the project right now is likely not necessarily exactly wha ti hav described here XD___
+
 This is Nancy's template for beginning new Playstation software projects written in C! :3
 
 This README documents all of the steps I personally took in accomplishing my current setup, and this template project represents the current state of my continually growing familiarity with writing software for the PSX using [Nugget + Psy-Q](https://github.com/ABelliqueux/nolibgs_hello_worlds). 😌☕

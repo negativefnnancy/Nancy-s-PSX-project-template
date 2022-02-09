@@ -28,6 +28,9 @@
 /* TODO: support PAL switch */
 #define FRAMES_PER_SECOND 60
 
+/* time step in fixed point */
+#define TIME_STEP (ONE / FRAMES_PER_SECOND)
+
 /* offset in vram of the first buffer in the double buffering setup */
 #define VRAM_BUFFER_1_X 0
 #define VRAM_BUFFER_1_Y 0
