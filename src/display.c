@@ -1,5 +1,8 @@
 #include <stdbool.h>
 
+#include <sys/types.h>
+#include <libetc.h>
+
 #include "display.h"
 
 void display_context_init (display_context_t *context) {
@@ -53,9 +56,6 @@ void display_context_init (display_context_t *context) {
 }
 
 void display_context_switch (display_context_t *context) {
-
-    /* initialize the gpu */
-    ResetGraph (0); /* this completely resets the gpu */
 
     /* TODO: pal mode if necessary */
 

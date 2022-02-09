@@ -44,4 +44,16 @@
 /* the number of buffers to swap between (e.g. 2 for double buffering) */
 #define N_GRAPHICS_BUFFERS 2
 
+/* the number of ordering tables to swap between */
+#define N_ORDERING_TABLES 2
+
+/* the number of primitive buffers to swap between */
+#define N_PRIMITIVE_BUFFERS 2
+
+/* the number of entries in an ordering table */
+#define ORDERING_TABLE_LENGTH 2048
+
+/* the size of primitive buffers */
+#define PRIMITIVE_BUFFER_SIZE 32768
+
 #endif /* CONFIG_H */
