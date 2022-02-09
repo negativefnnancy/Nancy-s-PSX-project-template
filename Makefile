@@ -1,4 +1,4 @@
-TARGET_NAME := test2
+TARGET_NAME := template
 
 PATH_SOURCE := src
 PATH_BUILD  := build

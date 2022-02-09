@@ -1,6 +1,6 @@
 # Nancy's PSX project template (Nugget + Psy-Q on \*nix)
 
-This is Nancy's template for beginning new Playstation software projects! :3
+This is Nancy's template for beginning new Playstation software projects written in C! :3
 
 This README documents all of the steps I personally took in accomplishing my current setup, and this template project represents the current state of my continually growing familiarity with writing software for the PSX using [Nugget + Psy-Q](https://github.com/ABelliqueux/nolibgs_hello_worlds). 😌☕
 
@@ -31,6 +31,7 @@ _TODO: screenshot of the project template running in PCSX-Redux shld go here!!!!
 * [Run](#run)
     * [Running in an emulator](#running-in-an-emulator)
     * [Running on real hardware](#running-on-real-hardware)
+* [Starting your own project](#starting-your-own-project)
 * [Links](#links)
 
 ## <a name="setup">Setup</a>
@@ -169,9 +170,15 @@ There are different ways you can get your own programs running on a real Playsta
 
 _TODO: write instructions for setting this up after I've done it myself! 0-0_
 
+## <a name="starting-you-own-project">Starting your own project</a>
+
+Of course, this is a project template that I want to serve as a useful starting point for new projects, so once everything is working, all that's left is to start changing stuff and adding stuff!!! >:3
+
+Maybe use the resources below to figure out how to do cool stuff. XD
+
 ## <a name="links">Links</a>
 
-Here are a bunch of links I've found really helpful!
+Here are a bunch of links I've found really helpful!:3
 - (A collection of links for resources related to PSX development)[https://ps1.consoledev.net/]
 - (An quick guide to getting started with PSX development)[https://psx.arthus.net/starting.html]
 - (LameGuy64's PSX programming tutorial series)[http://lameguy64.net/svn/pstutorials/index.html] (the username and password are both `annoyingmous`)
