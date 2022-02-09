@@ -56,4 +56,10 @@
 /* the size of primitive buffers */
 #define PRIMITIVE_BUFFER_SIZE 32768
 
+/* the size of the buffers used to store the state of gamepad */
+#define PAD_BUFFER_SIZE 34
+
+/* the number of gamepad state pad buffers */
+#define N_PAD_BUFFERS 2
+
 #endif /* CONFIG_H */

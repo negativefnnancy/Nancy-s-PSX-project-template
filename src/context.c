@@ -1,13 +1,22 @@
+#include <libapi.h>
+
 #include "context.h"
 #include "config.h"
 
 void context_init (context_t *context) {
+
+    size_t i, j;
   
     /* setup the display environment */
     display_context_init (&context->display);
 
     /* setup the graphics environment */
     graphics_context_init (&context->graphics);
+
+    /* clear the pad buffers */
+    for (i = 0; i < N_PAD_BUFFERS; i++)
+        for (j = 0; j < PAD_BUFFER_SIZE; j++)
+            context->pad_buffers[i][j] = 0xff;
 }
 
 void context_switch (context_t *context) {
@@ -17,6 +26,15 @@ void context_switch (context_t *context) {
 
     /* switch the graphics context */
     graphics_context_switch (&context->graphics);
+
+    /* configure pad polling */
+    InitPAD (context->pad_buffers[0],
+             PAD_BUFFER_SIZE,
+             context->pad_buffers[1],
+             PAD_BUFFER_SIZE);
+
+    /* start polling the gamepads */
+    StartPAD ();
 }
 
 void context_flip (context_t *context) {

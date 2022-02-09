@@ -1,6 +1,8 @@
 #ifndef CONTEXT_H
 #define CONTEXT_H
 
+#include <sys/types.h>
+
 #include "display.h"
 #include "graphics.h"
 
@@ -15,6 +17,9 @@ typedef struct context_t {
     /* the current state of the graphics (including gte state)
      * will be managed by this object */
     graphics_context_t graphics;
+
+    /* buffers to store the states of the gamepads */
+    u_char pad_buffers[N_PAD_BUFFERS][PAD_BUFFER_SIZE];
 
 } context_t;
 
