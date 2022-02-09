@@ -179,16 +179,16 @@ Maybe use the resources below to figure out how to do cool stuff. XD
 ## <a name="links">Links</a>
 
 Here are a bunch of links I've found really helpful!:3
-- (A collection of links for resources related to PSX development)[https://ps1.consoledev.net/]
-- (An quick guide to getting started with PSX development)[https://psx.arthus.net/starting.html]
-- (LameGuy64's PSX programming tutorial series)[http://lameguy64.net/svn/pstutorials/index.html] (the username and password are both `annoyingmous`)
-- (PCSX-Redux PSX emulator oriented towards development/debugging/reverse engineering)[https://github.com/grumpycoders/pcsx-redux]
-- (Martin Korth's Playstation technical specifications document)[https://psx-spx.consoledev.net/]
-- (Joshua Walker's Playstation technical research document)[http://hitmen.c02.at/files/docs/psx/psx.pdf]
-- (Rodrigo Copetti's practical analysis of Playstation architecture)[https://www.copetti.org/writings/consoles/playstation/]
-- (MIPS32 ISA reference)[https://app.box.com/s/5917337e62e9d034c6c1]
-- (Nolibgs examples)[https://github.com/ABelliqueux/nolibgs_hello_worlds]
-- (Nolibgs wiki)[https://schnappy.xyz/nolibgs/]
-- (Playstation disk swap trick explanations)[https://www.angelfire.com/ca/PlaystationHouse/SwapTrick.html]
-- (UniROM bootdisc, custom firmware, and shell for PSX)[https://unirom.github.io/]
-- (PeterLemon's bare metal MIPS assembly examples for PSX)[https://github.com/PeterLemon/PSX]
+- [A collection of links for resources related to PSX development](https://ps1.consoledev.net/)
+- [An quick guide to getting started with PSX development](https://psx.arthus.net/starting.html)
+- [LameGuy64's PSX programming tutorial series](http://lameguy64.net/svn/pstutorials/index.html) (the username and password are both `annoyingmous`)
+- [PCSX-Redux PSX emulator oriented towards development/debugging/reverse engineering](https://github.com/grumpycoders/pcsx-redux)
+- [Martin Korth's Playstation technical specifications document](https://psx-spx.consoledev.net/)
+- [Joshua Walker's Playstation technical research document](http://hitmen.c02.at/files/docs/psx/psx.pdf)
+- [Rodrigo Copetti's practical analysis of Playstation architecture](https://www.copetti.org/writings/consoles/playstation/)
+- [MIPS32 ISA reference](https://app.box.com/s/5917337e62e9d034c6c1)
+- [Nolibgs examples](https://github.com/ABelliqueux/nolibgs_hello_worlds)
+- [Nolibgs wiki](https://schnappy.xyz/nolibgs/)
+- [Playstation disk swap trick explanations](https://www.angelfire.com/ca/PlaystationHouse/SwapTrick.html)
+- [UniROM bootdisc, custom firmware, and shell for PSX](https://unirom.github.io/)
+- [PeterLemon's bare metal MIPS assembly examples for PSX](https://github.com/PeterLemon/PSX)
