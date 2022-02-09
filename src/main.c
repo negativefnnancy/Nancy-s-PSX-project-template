@@ -1,27 +1,32 @@
-/* TODO: support PAL switch */
-#define RESOLUTION_X 320
-#define RESOLUTION_Y 240
+/* c standard library headers */
+#include <stdio.h>
+#include <stdbool.h>
 
-#define CENTER_X (RESOLUTION_X / 2)
-#define CENTER_Y (RESOLUTION_Y / 2)
+/* psy-q library headers */
+#include <sys/types.h>
+#include <libetc.h>
+#include <libgte.h>
+#include <libgpu.h>
+#include <libapi.h>
 
-#define UNIT (RESOLUTION_X / 2)
+/* project headers */
+#include "context.h"
 
-#define FOCAL_LENGTH 2
-
-#define SCREEN_Z (FOCAL_LENGTH * UNIT)
-
-typedef struct double_buffer_context_t {
-
-    DRAWENV drawing_environments[2];
-    DISPENV display_environments[2];
-
-} double_buffer_context_t;
-
+/* the entry point of the program */
 void main () {
 
-    /* initialize the gpu */
-    ResetGraph (0);
+    /* the global context object we will use instead of global variables */
+    context_t context;
 
+    /* initialize the context with default values */
+    context_init (&context);
+
+    /* switch the hardware state to the context */
+    context_switch (&context);
     
+    /* enter the main loop */
+    while (true) {
+
+        display_context_flip (&context.display);
+    }
 }

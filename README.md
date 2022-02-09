@@ -4,6 +4,8 @@ This is Nancy's template for beginning new Playstation software projects written
 
 This README documents all of the steps I personally took in accomplishing my current setup, and this template project represents the current state of my continually growing familiarity with writing software for the PSX using [Nugget + Psy-Q](https://github.com/ABelliqueux/nolibgs_hello_worlds). 😌☕
 
+Also I think my goal here will be to develop this into a little toolkit on top of Negget + Psy-Q for myself. Not an entire game engine, but just a toolkit for making things nice and neat and easy to then go on and build multiple different types of engines! :o
+
 This is for \*nix environments **only**! >:3
 
 Also this assumes you have standard and typical command line tools installed. Stuff like `git`, `wget`, `make`, `7z`, `mkdir`. XD!
