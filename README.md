@@ -12,7 +12,7 @@ Also this assumes you have standard and typical command line tools installed. St
 
 (Let me know if something here is wrong or messed up or if you have questions or trouble or complaints or w/e XD)
 
-_TODO: screenshot of the project template running in PCSX-Redux shld go here!!!!_
+![Short screen recording showing the current template project running](demo.gif)
 
 ## Contents
 
