@@ -99,7 +99,7 @@ Once the toolchain is built, you need the converted Psy-Q SDK.
 
 ##### <a name="testing-psy-q-and-toolchain">Testing Psy-Q and toolchain</a>
 
-If everything's worked so far, there should be in the `hello_cube` directory a `.ps-exe` Playstation executable file (this is a program image that contains a program to be loaded into the Playstation's RAM, and isn't to be confused with the CD image which probably contains far more data than can fit in ram at one time!) that you can for example drag and drop onto the PCSX-Redux emulator window in order to load it, and it should show a rotating cube!
+If everything's worked so far, there should be in the `hello_cube` directory a `.ps-exe` Playstation executable file (this is a program image that contains a program to be loaded into the Playstation's RAM, and isn't to be confused with the CD image which probably contains far more data than can fit in RAM at one time!) that you can for example drag and drop onto the PCSX-Redux emulator window in order to load it, and it should show a rotating cube!
 
 ![Screenshot of hello_cube demo running in PCSX-Redux](hello_cube.png)
 
@@ -119,7 +119,7 @@ If you define the variable in the configuration file like this, it will take eff
 
 1) Clone the [IMG2TIM repository](https://github.com/lameguy64/img2tim): ```git clone https://github.com/lameguy64/img2tim```
 2) Change directories to the source root directory: ```img2tim```
-3) Make sure you have the (FreeImage library)[https://freeimage.sourceforge.io/] installed! (I installed mine via Arch Linux repositories. _TODO: instructions for manual install_)
+3) Make sure you have the [FreeImage library](https://freeimage.sourceforge.io/) installed! (I installed mine via Arch Linux repositories. _TODO: instructions for manual install_)
 4) I was able to compile IMG2TIM with the following command: ```g++ -lfreeimage main.cpp tim.cpp -o img2tim```
 5) Then I installed it by copying the produced `img2tim` binary to some directory in my PATH. (In my case, `~/bin` is in my PATH, so I just copied it there, hehe.)
 
@@ -129,7 +129,7 @@ _(Following the compile instructions currently present [the repository's](https:
 
 1) Clone the [MKPSXISO repository](https://github.com/Lameguy64/mkpsxiso) like so: ```git clone https://github.com/Lameguy64/mkpsxiso```
 2) Change directories to the source root directory: ```cd mkpsxiso```
-3)Clone submodules: ```git submodule update --init --recursive```
+3) Clone submodules: ```git submodule update --init --recursive```
 4) Run the following build commands: ```cmake -S . -B ./build -DCMAKE_BUILD_TYPE=Release && cmake --build ./build && sudo cmake --install ./build```
 
 ##### <a name="testing-mkpsxiso">Testing MKPSXISO</a>
