@@ -23,6 +23,7 @@ _TODO: screenshot of the project template running in PCSX-Redux shld go here!!!!
             * [Troubleshooting Binutils/GCC build](#troubleshooting-binutils-gcc-build)
         * [Setting up Psy-Q](#setting-up-psy-q)
             * [Testing Psy-Q and toolchain](#testing-psy-q-and-toolchain)
+            * [Setting the Psy-Q path environment variable](#setting-the-psy-q-path-environment-variable)
         * [Building IMG2TIM](#building-img2tim)
         * [Building MKPSXISO](#build-mkpsxiso)
             * [Testing MKPSXISO](#testing-mkpsxiso)
@@ -101,6 +102,18 @@ If everything's worked so far, there should be in the `hello_cube` directory a `
 
 ![Screenshot of hello_cube demo running in PCSX-Redux](hello_cube.png)
 
+##### <a name="setting-the-psy-q-path-environment-variable">Setting the Psy-Q path environment variable</a>
+
+A particularity for building this template project is that you must define an environment variable containing the path to the `nolibgs_hello_worlds` directory. This is for the convenience of being able to place your PSX project directories wherever you like and because this template relies on the Makefiles present in that repository.
+
+The environment variable that is expected is `NOLIBGS_PATH` and, for example, mine is set to `/home/nancy/psx/nolibgs_hello_worlds` because that's where I have placed the repository in my filesystem.
+
+You can define this variable by including it before the `make` command used to build this template project, by preceding `make` with e.g. `NOLIBGS_PATH=/home/nancy/psx/nolibgs_hello_worlds` (it would look like this: ```NOLIBGS_PATH=/home/nancy/psx/nolibgs_hello_worlds make```)
+
+Or, more preferably, you can define this variable persistently by exporting it in your `.bashrc` configuration file (or equivalent for whatever shell you use) by placing the following line somewhere in that file: ```export NOLIBGS_PATH=/home/nancy/psx/nolibgs_hello_worlds```
+
+If you define the variable in the configuration file like this, it will take effect once you start a new shell instance (open a new terminal, etc.).
+
 #### <a name="building-img2tim">Building IMG2TIM</a>
 
 1) Clone the [IMG2TIM repository](https://github.com/lameguy64/img2tim): ```git clone https://github.com/lameguy64/img2tim```
@@ -135,6 +148,8 @@ If it worked, it should have produced `hello_cd.cue` and `hello_cd.bin` which yo
 ## <a name="build">Build</a>
 
 Once you know your build setup is working, that you can successfully compile programs and produce working `.bin` and `.cue` files, you can build this template project by simply running ```make``` in the source root directory. This will produce `.bin` and `.cue` files in the `build` subdirectory that you can load in an emulator or burn to a CD and play load on real Playstation that has been modded with a modchip or with custom firmware.
+
+Make sure your `NOLIBGS_PATH` variable [has been defined](#setting-the-psy-q-path-environment-variable)!
 
 _TODO: troubleshooting in case it doesnt work… 😱_
 
